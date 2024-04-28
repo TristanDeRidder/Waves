@@ -1,0 +1,203 @@
+.container-about {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-about section,
+.container-about blockquote {
+  margin-bottom: 5rem;
+}
+
+.offer h1 {
+  font-size: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 47rem) {
+  .offer h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 78rem) {
+  .offer h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+}
+
+.subtitle {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: var(--margin2);
+}
+
+@media (min-width: 47rem) {
+  .subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 78rem) {
+  .subtitle {
+    font-size: 3.5rem;
+  }
+}
+
+.science__title {
+  font-size: 2rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.quote__text {
+  background-color: hsl(0, 0%, 50%);
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  border-left: solid var(--white) 0.8px;
+  margin-bottom: 0;
+  margin-top: 2.5rem;
+}
+
+.quotemark {
+  width: 5rem;
+  position: absolute;
+  left: 5%;
+}
+
+.author {
+  font-size: 1rem;
+  text-align: end;
+}
+
+.underlined {
+  text-decoration: underline;
+  padding-bottom: 0;
+}
+
+.well__being__list {
+  list-style: url(../../images/icons/bullet-list--white.svg);
+  padding: 0 1rem;
+
+  margin-top: 1rem;
+}
+
+.diversity p {
+  margin-bottom: var(--margin2);
+}
+
+.diversity ol {
+  margin-top: var(--margin2);
+  padding: 0 1rem;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--black);
+  margin-bottom: 2rem;
+  gap: var(--gap2);
+}
+
+.free__plan {
+  background: rgb(216, 230, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(216, 230, 255, 1) 0%,
+    rgba(31, 115, 251, 1) 100%
+  );
+  padding: 2rem;
+  border-radius: 32px;
+  margin-bottom: 2rem;
+  max-width: 22rem;
+}
+
+@media (min-width: 50rem) {
+  .free__plan {
+    margin-bottom: 0rem;
+  }
+}
+
+.member__plan {
+  background: rgb(255, 216, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 216, 255, 1) 0%,
+    rgba(232, 31, 251, 1) 100%
+  );
+  padding: 2rem;
+  border-radius: 32px;
+  max-width: 22rem;
+}
+
+.plan__title {
+  font-size: 2rem;
+  font-family: "Quicksand";
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.plan__subtitle {
+  font-size: var(--font1);
+}
+
+.plan__list {
+  list-style: url(../../images/icons/checkmark--black.svg);
+  line-height: 1.5;
+}
+
+.blue__background {
+  background-color: hsl(218, 77%, 71%);
+  border-radius: 16px;
+  padding: 1rem 0.5rem;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pink__background {
+  background-color: hsl(293, 75%, 75%);
+  border-radius: 16px;
+  padding: 1rem 0.5rem;
+  padding-left: 2rem;
+}
+
+.plan__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet__start,
+.wallet__learn {
+  color: var(--black);
+  text-align: center;
+}
+
+.wallet__start {
+  background-color: var(--white);
+  border-radius: 4px;
+  padding: 0.5rem 6rem;
+  margin-bottom: 0.5rem;
+  width: max-content;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.member__plan .plan__button {
+  margin-top: 1.5rem;
+}
+
+.wallet__start:hover {
+  opacity: 70%;
+}
+
+.wallet__learn {
+  text-decoration: underline;
+}

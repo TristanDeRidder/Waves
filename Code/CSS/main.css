@@ -1,0 +1,275 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --grey2: hsl(0, 0%, 66%);
+  --white-opacity: hsl(0, 0%, 50%);
+  --orange: hsl(31, 74%, 58%);
+  --red: hsl(345, 58%, 51%);
+  --blue: hsl(230, 91%, 57%);
+  --green: hsl(128, 35%, 38%);
+  --yellow: hsl(39, 100%, 72%);
+  --pink: hsl(304, 52%, 55%);
+  --sat-blue: hsl(230, 60%, 54%);
+
+  --font1: 1rem;
+  --font115: 1.15rem;
+  --font15: 1.5rem;
+
+  --margin1: 1rem;
+  --margin2: 2rem;
+  --margin3: 3rem;
+  --margin4: 4rem;
+  --margin5: 5rem;
+
+  --gap1: 1rem;
+  --gap2: 2rem;
+  --gap3: 3rem;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato/Lato\ Regular.woff2") format("woff2"),
+    url("../../fonts/Lato/Lato\ Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato/Lato\ Hairline.woff2") format("woff2"),
+    url("../../fonts/Lato/Lato\ Hairline.css") format("woff");
+  font-weight: 250;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato/Lato\ Light.woff2") format("woff2"),
+    url("../../fonts/Lato/Lato\ Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../../fonts/Quicksand/Quicksand\ Medium.woff2") format("woff2"),
+    url("../../fonts/Quicksand/Quicksand\ Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("Quicksand Light.woff2") format("woff2"),
+    url("Quicksand Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Lato";
+  font-size: var(--font1);
+  line-height: 1.8;
+}
+
+@media (min-width: 78rem) {
+  body {
+    font-size: var(--font115);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand";
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.header__home nav {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: var(--font15);
+  z-index: 4;
+  top: 0;
+  margin-top: var(--margin1);
+}
+
+.ultra__container {
+  display: flex;
+  max-width: 50rem;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navigation.sticky {
+  background-color: var(--grey);
+}
+
+.ultra__container svg {
+  width: 7.5rem;
+}
+
+.navigation__links {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__links li {
+  margin-left: var(--margin2);
+  transition: all 0.2s ease-in-out;
+  padding: 0rem 0.5rem;
+}
+
+.navigation__links li:hover {
+  background-color: var(--white-opacity);
+}
+
+.nav__bg {
+  position: fixed;
+  z-index: 3;
+  height: 5rem;
+  width: 100vw;
+  background-color: var(--black);
+  opacity: 80%;
+  top: 0;
+}
+
+.blue {
+  color: var(--sat-blue);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Footer Styles */
+.footer {
+  display: block;
+  padding: 4rem;
+  border-top: solid 0.8px;
+  max-width: none;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  gap: 2rem;
+}
+
+.about__us,
+.legal,
+.social {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 10rem;
+}
+
+/* Footer List */
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  margin-right: var(--margin5);
+  padding: 0;
+  width: 5rem;
+}
+
+@media (min-width: 40rem) {
+  .footer__list {
+    margin-right: 9rem;
+    width: 7rem;
+  }
+}
+
+/* Footer Sections */
+.footer__title {
+  margin-bottom: 1rem;
+}
+
+/* Footer Icon List */
+.footer__icons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: var(--gap1);
+}
+
+@media (min-width: 52rem) {
+  .footer__icons {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Social Icons */
+.footer__icons li {
+  width: 2rem;
+}
+
+.footer__icons li a svg {
+  height: 2rem;
+  margin-right: var(--margin1);
+  transition: fill 0.2s ease-in-out;
+  fill: var(--white);
+}
+
+.footer__icons li a:hover svg {
+  fill: var(--yellow);
+}
+
+.legal ul {
+  width: max-content;
+}
+
+/* Footer List Elements */
+.footer__list li a {
+  margin-bottom: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer__list li a:hover {
+  color: var(--yellow);
+}
